@@ -10,7 +10,7 @@ function addNumber(number) {
             result = number;
             document.getElementById('number').innerText = number;
         } else {
-            result += number;
+            result += number.toString();
             document.getElementById('number').innerText += number;
         }
     } else {
@@ -18,7 +18,7 @@ function addNumber(number) {
             temp = number;
             document.getElementById('number').innerText = number;
         } else {
-            temp += number;
+            temp += number.toString();
             document.getElementById('number').innerText += number;
         }
     }
