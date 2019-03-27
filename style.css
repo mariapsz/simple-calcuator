@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+div.calc {
+    width: 30vw;
+    border-style: solid;
+    border-width: 1px;
+}
+
+div.number {
+    height: 50%;
+}
+
+div.operator {
+    height: 50%;
+}
+
+.display {
+    border-style: solid;
+    border-width: 1px;
+    text-align: right;
+    height: 3.2rem;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buttons button {
+    width: 25%;
+    height: 2rem;
+}
