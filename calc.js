@@ -14,7 +14,7 @@ function addNumber(number) {
             document.getElementById('number').innerText += number;
         }
     } else {
-        if (temp === 0) {
+        if (temp == null || temp === 0) {
             temp = number;
             document.getElementById('number').innerText = number;
         } else {
@@ -51,20 +51,20 @@ function equal() {
     if (temp != null && result.toString()[result.toString().length - 1] != '.') {
         switch (operator) {
             case '+':
-            result = result + temp;
+            result = parseFloat(result) + parseFloat(temp);
             break;
             
             case '-':
-            result = result - temp;
+            result = parseFloat(result) - parseFloat(temp);
             break;
 
             case '*':
-            result = result * temp;
+            result = parseFloat(result) * parseFloat(temp);
             break;
 
             case '/':
             if (result != 0)
-                result = result / temp;
+                result = parseFloat(result) / parseFloat(temp);
             break;
         }
         document.getElementById('number').innerText = result;
